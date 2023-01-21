@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu formatador de Nomes</title>
+<style>
+    body{
+        background-color: darkgreen;
+        font: normal 15pt Arial;
+        color: yellow;
+    }
+    h1{
+        color: blue;
+    }
+    h2{
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Olá muito obrigado por nos informar o seu nome!</h1>
+    <h2> Segue abaixo as Informções</h2>
+    <script>
+        window.confirm('Isso é um formatador de nomes que utilizar?')
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`O seu nome tem ${nome.length} letras. <br>`)
+        document.write(`O seu nome em maiúsculas é ${nome.toLocaleUpperCase()} <br>`)
+        document.write(`O seu nome em minúsculas é ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>
